@@ -1,0 +1,98 @@
+:root{
+  --black:#000;
+  --white:#fff;
+  --grey:#555;
+  --line:#e2e2e2;
+  --font:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --header-h:72px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font);color:var(--black);background:var(--white);line-height:1.5}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--black);outline-offset:3px}
+
+/*  Header*/
+
+.site-header{background:var(--white);border-bottom:1px solid var(--line);position:relative;z-index:20}
+.bar{height:var(--header-h);padding:0 clamp(1.25rem,5vw,4rem);display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:1.4rem;font-weight:700;text-decoration:none;letter-spacing:-.01em}
+.nav{display:flex;gap:2.2rem}
+.nav a{text-decoration:none;font-size:1.05rem;padding:.3rem 0;border-bottom:2px solid transparent}
+.nav a:hover,.nav a[aria-current="page"]{border-bottom-color:var(--black)}
+
+/* hamburger (hidden on desktop) */
+
+.burger{display:none;width:44px;height:44px;background:none;border:0;cursor:pointer;
+  flex-direction:column;justify-content:center;align-items:center;gap:6px}
+.burger span{display:block;width:26px;height:2.5px;background:var(--black);border-radius:2px;
+  transition:transform .25s,opacity .2s}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(8.5px) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-8.5px) rotate(-45deg)}
+
+/* Hero */
+/* phones: photo and text stay side by side, photo small at the top right */
+.hero{
+  display:flex;flex-direction:row-reverse;align-items:flex-start;justify-content:space-between;
+  gap:1rem;padding:2rem clamp(1.25rem,5vw,4rem) 3rem;
+}
+.hero-photo{flex:0 0 clamp(92px,27vw,130px)}
+.hero-photo img,.photo-fallback{
+  display:block;width:100%;aspect-ratio:1;border-radius:50%;
+  object-fit:cover;object-position:50% 20%;
+  border:2px solid var(--black);
+}
+
+.photo-fallback{display:grid;place-items:center;font-size:2rem;font-weight:700;background:#f2f2f2}
+
+.hero-text{flex:1;min-width:0;text-align:left}
+.hello{color:var(--grey);font-size:clamp(.85rem,3vw,1.1rem)}
+.hero h1{font-size:clamp(1.7rem,7.5vw,3rem);font-weight:700;line-height:1.1;margin:.25rem 0 .7rem}
+.role{color:#333;font-size:clamp(.85rem,3.2vw,1.35rem);line-height:1.45}
+
+.actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.3rem}
+.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:.85rem;
+  padding:.7rem 1.2rem;border:1.5px solid var(--black);border-radius:999px;
+  transition:background .2s,color .2s}
+.btn.solid{background:var(--black);color:var(--white)}
+.btn.solid:hover{background:var(--white);color:var(--black)}
+.btn.line{background:var(--white);color:var(--black)}
+.btn.line:hover{background:var(--black);color:var(--white)}
+
+.social{display:flex;gap:.7rem;margin-top:1.1rem}
+.social a{width:38px;height:38px;border-radius:50%;background:var(--black);color:var(--white);
+  display:grid;place-items:center;font-weight:700;font-size:.95rem;text-decoration:none;
+  border:1.5px solid var(--black);transition:background .2s,color .2s}
+.social a:hover{background:var(--white);color:var(--black)}
+.social svg{width:20px;height:20px;fill:currentColor}
+
+/* Tablet and desktop: big photo left, centred text right */
+@media (min-width:768px){
+  .hero{flex-direction:row;align-items:center;justify-content:center;gap:clamp(2rem,6vw,6rem);
+    min-height:calc(100vh - var(--header-h));padding:2rem clamp(1.25rem,5vw,4rem)}
+  .hero-photo{flex:0 0 clamp(280px,36vw,460px)}
+  .hero-photo img,.photo-fallback{border-width:3px}
+  .hero-text{text-align:center}
+  .hello{font-size:1.15rem}
+  .hero h1{font-size:clamp(2.2rem,4vw,3.4rem)}
+  .role{font-size:clamp(1.1rem,1.8vw,1.6rem);max-width:30ch;margin-inline:auto}
+  .actions,.social{justify-content:center}
+  .btn{font-size:.95rem;padding:.8rem 1.5rem}
+}
+
+/* ---------- Phones: hamburger menu ---------- */
+@media (max-width:767px){
+  :root{--header-h:64px}
+  .logo{font-size:1.2rem}
+  .burger{display:flex}
+  .nav{
+    display:none;position:absolute;top:var(--header-h);left:0;right:0;
+    flex-direction:column;gap:0;background:var(--white);
+    border-bottom:1px solid var(--black);padding:.4rem clamp(1.25rem,5vw,4rem) 1rem;
+  }
+  .nav.open{display:flex}
+  .nav a{padding:.9rem 0;border-bottom:1px solid var(--line);font-size:1.1rem}
+  .nav a:last-child{border-bottom:0}
+}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
