@@ -13,45 +13,199 @@
 
 <header class="site-header">
   <div class="bar">
-    <a class="logo" href="index.html">Pontsho Komape</a>
+    <a class="logo" href="#home">Pontsho Komape</a>
 
     <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
       <span></span><span></span><span></span>
     </button>
 
     <nav id="nav" class="nav">
-      <a href="about.html">About</a>
-      <a href="experience.html">Experience</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
     </nav>
   </div>
 </header>
 
-<main class="hero">
-  <div class="hero-photo">
-    <img src="images/portfoliohomepage.jpeg" alt="Portrait of Pontsho Komape" data-fallback>
-  </div>
+<main>
 
-  <div class="hero-text">
-    <p class="hello">Hello, I am</p>
-    <h1>Pontsho Komape</h1>
-    <p class="role">A graduate Java software developer | Data enthusiast | South Africa</p>
-
-    <div class="actions">
-      <a class="btn solid" href="cv/Pontsho-Komape-CV.pdf" download>Download CV</a>
-      <a class="btn line" href="contact.html">Contact Info</a>
+  <section id="home" class="hero">
+    <div class="hero-photo">
+      <img src="images/portfoliohomepage.jpeg" alt="Portrait of Pontsho Komape" data-fallback>
     </div>
 
-    <div class="social">
-      <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" aria-label="LinkedIn">in</a>
-      <a href="https://github.com/YOUR-GITHUB" aria-label="GitHub">
-        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-      </a>
+    <div class="hero-text">
+      <p class="hello">Hello, I am</p>
+      <h1>Pontsho Komape</h1>
+      <p class="role">A graduate Java software developer | Data enthusiast | South Africa</p>
+
+      <div class="actions">
+        <a class="btn solid" href="cv/Pontsho-Komape-CV.pdf" download>Download CV</a>
+        <a class="btn line" href="mailto:pontshotizzy1@gmail.com">Contact Info</a>
+      </div>
+
+      <div class="social">
+        <a href="https://www.linkedin.com/in/pontsho-rouwen-komape-564748355" aria-label="LinkedIn">in</a>
+        <a href="https://github.com/Komape-Pontsho-Rouwen" aria-label="GitHub">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
+      </div>
     </div>
-  </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="about">
+      <div class="about-photo">
+        <img src="images/aboutmeimage.jpeg" alt="Pontsho Komape in graduation attire" data-fallback>
+      </div>
+
+      <div class="about-text">
+        <h2 class="section-title">About me</h2>
+        <p>Recent BICT graduate from the University of Mpumalanga, focused on backend development with Java and Spring Boot.</p>
+
+        <h3>What I'm looking for</h3>
+        <p>An opportunity in tech, with Java software engineering as the main goal. The aim is to grow as a developer, learn alongside skilled engineers and start a career in the industry. Open to other software development and data roles as well.</p>
+
+        <h3>Backend development</h3>
+        <p>Jakarta EE at university built the foundation, and Spring Boot is now the main framework. <a href="https://github.com/Komape-Pontsho-Rouwen/ArejeKota-backend">ArejeKota</a> is a multi-vendor food ordering REST API built with Spring Boot, Spring Data JPA and MySQL, organised into controllers, services, repositories and DTOs.</p>
+        <p>It includes email OTP account activation, BCrypt password hashing, JWT login and a vendor onboarding flow with admin approval. Orders and role-based security are in progress.</p>
+
+        <h3>Data analytics</h3>
+        <p>A 255,000-row financial dataset was cleaned and analysed in Python with Pandas to find which borrower characteristics lead to loan defaults. Default rates fall from 20.56% for ages 18 to 25 to 4.60% for ages 65 and over, and applicants earning under 30k default at 21.96% against 9.05% for those above 110k.</p>
+
+        <h3>Security and networking</h3>
+        <p>Cryptography (DES, AES, hashing) and networking were studied in theory, with Cisco Packet Tracer used to practise network design. The hashing side shows up in ArejeKota through BCrypt.</p>
+      </div>
+    </div>
+
+    <div class="boxes">
+      <div class="box">
+        <h3>Education</h3>
+        <ul>
+          <li>BICT (NQF Level 7), University of Mpumalanga<span>2022 to 2025, awarded May 2026</span></li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>Certificates</h3>
+        <ul>
+          <li>Google AI Essentials<span>Oct 2026, CAPACITI AI Skills Acceleration Programme</span></li>
+          <li>AWS Machine Learning Foundations<span>2025</span></li>
+          <li>AWS Cloud 101<span>2025</span></li>
+          <li>FNB App of the Year Full Stack Development<span>2025</span></li>
+          <li>IBM Cloud Fundamentals<span>2022</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+    <section id="projects" class="section">
+    <h2 class="section-title">Projects</h2>
+    <div class="project-grid">
+
+      <article class="project">
+        <img class="project-shot" src="images/arejekota.jpeg" alt="ArejeKota Ordering System API">
+        <div class="project-body">
+          <h3>ArejeKota Ordering System Backend</h3>
+          <p class="meta">May 2026 to present</p>
+          <p>Multi-vendor food ordering REST API with email OTP account activation, BCrypt password hashing, JWT login and vendor onboarding with admin approval. Orders and role-based security are in progress.</p>
+          <p class="stack">Java, Spring Boot, Spring Data JPA, MySQL</p>
+          <div class="project-links">
+            <a class="btn solid" href="https://komape-pontsho-rouwen.github.io/ArejeKota-frontend/">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              View project
+            </a>
+            <a class="btn line" href="https://github.com/Komape-Pontsho-Rouwen/ArejeKota-backend">
+              <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <img class="project-shot" src="images/katzplumbing.jpeg" alt="Katz Plumbing and Construction website">
+        <div class="project-body">
+          <h3>Katz Plumbing &amp; Construction Website</h3>
+          <p class="meta">Client project, Moletjie, Limpopo</p>
+          <p>Responsive business website that advertises the company's work, showcases completed projects and lets clients get in touch. It has home, services, gallery, about and contact sections, with a contact form connected to Formspree for direct client enquiries.</p>
+          <p class="stack">HTML5, CSS, JavaScript, Formspree, Git and GitHub</p>
+          <div class="project-links">
+            <a class="btn solid" href="https://komape-pontsho-rouwen.github.io/KPC/">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              View project
+            </a>
+            <a class="btn line" href="https://github.com/Komape-Pontsho-Rouwen/KPC">
+              <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <img class="project-shot" src="images/iphoneclone.jpeg" alt="iPhone-style calculator">
+        <div class="project-body">
+          <h3>iPhone Calculator</h3>
+          <p class="meta">Web app</p>
+          <p>A calculator modelled on the iPhone calculator.</p>
+          <p class="stack">ADD YOUR TECH STACK</p>
+          <div class="project-links">
+            <a class="btn solid" href=" https://komape-pontsho-rouwen.github.io/iphone-calculator/">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              View project
+            </a>
+            <a class="btn line" href="https://github.com/Komape-Pontsho-Rouwen/iphone-calculator">
+              <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <img class="project-shot" src="images/aiproductivity.jpeg" alt="AI Workplace Productivity Assistant">
+        <div class="project-body">
+          <h3>AI Workplace Productivity Assistant</h3>
+          <p class="meta">October 2026</p>
+          <p>Web app with four AI tools: a meeting notes summariser, task planner, email generator and research assistant. Includes sign-up, login, per-user data and responsible AI features.</p>
+          <p class="stack">Lovable, Supabase, Tailwind CSS</p>
+          <div class="project-links">
+            <a class="btn solid" href="https://aiproductivityassistantbypontsho.lovable.app/">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              View project
+            </a>
+            <a class="btn line" href="https://github.com/Komape-Pontsho-Rouwen/AI-Workplace-Productivity-Assistant">
+              <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <img class="project-shot" src="images/loan-analysis.png" alt="Loan default risk analysis charts">
+        <div class="project-body">
+          <h3>Loan Default Risk Analysis</h3>
+          <p class="meta">Python, Pandas</p>
+          <p>Cleaned and validated a 255,000-row financial dataset. Default rates fall from 20.56% for ages 18 to 25 to 4.60% for ages 65 and over, and applicants earning under 30k default at 21.96% against 9.05% above 110k.</p>
+          <p class="stack">Python, Pandas, Matplotlib</p>
+          <div class="project-links">
+            <a class="btn solid" href="https://YOUR-LOAN-ANALYSIS-LINK">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              View project
+            </a>
+            <a class="btn line" href="https://github.com/Komape-Pontsho-Rouwen/YOUR-LOAN-REPO">
+              <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
 </main>
-
-<script src="js/main.js"></script>
 </body>
 </html>
+
+    
